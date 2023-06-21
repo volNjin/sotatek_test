@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-export default function Bottom({ handleDone, handleRemove }) {
+export default function BulkAction({ handleDone, handleRemove }) {
     return (
         <div className='bottom-div'>
             <div className='text'>Bulk Action:</div>

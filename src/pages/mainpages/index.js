@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import NewTask from '../../components/NewTask';
 import TaskList from '../../components/TaskList';
-import Bottom from '../../components/Bottom';
+import BulkAction from '../../components/BulkAction';
 function MainPage() {
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -40,7 +40,7 @@ function MainPage() {
                 <div className='right-side'>
                     <TaskList data={data} setData={setData} handleCheck={handleCheck} />
                     {showDiv &&
-                        <Bottom handleDone={handleDone} handleRemove={handleRemove} />
+                        <BulkAction handleDone={handleDone} handleRemove={handleRemove} />
                     }
                 </div>
             </div>
