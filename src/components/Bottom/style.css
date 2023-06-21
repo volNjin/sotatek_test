@@ -1,0 +1,57 @@
+.bottom-div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 82px;
+    background: #E0E0E0;
+    border: 1px solid #000000;
+    border-radius: 0px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    color: #333333;
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    text-align: left;
+    line-height: 1px;
+    padding: 5px;
+}
+
+.bottom-done-button {
+    width: 110px;
+    height: 36px;
+    color: #FFFFFF;
+    font-family: 'Arimo';
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    background: #2196F3;
+    border: none;
+    border-radius: 10px;
+}
+
+.bottom-remove-button {
+    width: 110px;
+    height: 36px;
+    color: #FFFFFF;
+    font-family: 'Arimo';
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    background: #D9534F;
+    border: none;
+    border-radius: 10px;
+}
