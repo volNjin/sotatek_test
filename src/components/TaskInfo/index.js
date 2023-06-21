@@ -7,9 +7,12 @@ export default function TaskInfo({
     handleSubmit,
     type
 }) {
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date();
+    const timeZoneOffset = today.getTimezoneOffset() * 60000; // Convert offset to milliseconds
+    const localISODate = new Date(today - timeZoneOffset).toISOString().split('T')[0];
+
     if (!data.dueDate) {
-        data.dueDate = today;
+        data.dueDate = localISODate;
     }
     return (
         <form className='form-container' onSubmit={() => handleSubmit()}>
@@ -37,7 +40,7 @@ export default function TaskInfo({
                         type='date'
                         name='dueDate'
                         className='input-field'
-                        min={today}
+                        min={localISODate}
                         value={data?.dueDate}
                         onChange={(e) => { index !== -1 ? handleChange(index, e.target.name, e.target.value) : handleChange(e) }}
                     />

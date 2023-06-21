@@ -12,6 +12,7 @@ export default function TaskBox({ index, data, handleChange, handleRemoveClick, 
                 && event.target.parentNode !== detailField 
                 && event.target.parentNode.parentNode !== detailField
                 && event.target.parentNode.parentNode.parentNode !== detailField
+                && event.target.parentNode.parentNode.parentNode.parentNode !== detailField
                 ) {
                 setShowData(false);
             }
