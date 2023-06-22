@@ -28,6 +28,7 @@ function MainPage() {
         const updatedData = data.filter(item => !item.isChecked);
         localStorage.setItem('myData', JSON.stringify(updatedData));
         setData(updatedData);
+        setShowDiv(false);
     }
 
     return (

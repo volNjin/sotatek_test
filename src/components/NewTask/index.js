@@ -7,7 +7,7 @@ export default function NewTask({ data }) {
         'title': '',
         'description': '',
         'dueDate': '',
-        'piority': 'normal',
+        'piority': '1',
         'isChecked': false,
     }
 
@@ -24,7 +24,14 @@ export default function NewTask({ data }) {
     const handleAdd = () => {
         const updatedData = [...data, newData];
         const sortedData = [...updatedData].sort((a, b) => {
-            return new Date(a.dueDate) - new Date(b.dueDate);
+            const dueDateComparison = new Date(a.dueDate) - new Date(b.dueDate);
+            if (dueDateComparison !== 0) {
+                return dueDateComparison;
+            }
+
+            // If 'dueDate' values are the same, compare 'piority' values
+            const piorityComparison = a.piority.localeCompare(b.piority);
+            return piorityComparison;
         });
         localStorage.setItem('myData', JSON.stringify(sortedData));
     }

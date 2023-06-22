@@ -53,9 +53,9 @@ export default function TaskInfo({
                         value={data?.piority || 'normal'}
                         onChange={(e) => { index !== -1 ? handleChange(index, e.target.name, e.target.value) : handleChange(e) }}
                     >
-                        <option value='low'>Low</option>
-                        <option value="normal">Normal</option>
-                        <option value='high'>High</option>
+                        <option value='0'>Low</option>
+                        <option value="1">Normal</option>
+                        <option value='2'>High</option>
                     </select>
                 </div>
             </div>

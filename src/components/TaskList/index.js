@@ -4,14 +4,15 @@ import TaskBox from '../TaskBox';
 
 export default function TaskList({ data, setData, handleCheck }) {
     const [searchKey, setSearchKey] = useState('');
-    console.log(data)
+
     const handleSearch = (event) => {
         setSearchKey(event.target.value);
     }
     const filteredData = data.filter((item) => {
-        const title = item.title || '';
+        const title = item.title;
         return title.toLowerCase().includes(searchKey.toLowerCase());
     });
+    
     const handleChange = (index, name, value) => {
         const updatedData = [...data];
         updatedData[index][name] = value;
