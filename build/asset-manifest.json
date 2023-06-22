@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sotatek_test/static/css/main.cc19ce7b.css",
+    "main.js": "/sotatek_test/static/js/main.58c2076c.js",
+    "static/js/787.97a945da.chunk.js": "/sotatek_test/static/js/787.97a945da.chunk.js",
+    "index.html": "/sotatek_test/index.html",
+    "main.cc19ce7b.css.map": "/sotatek_test/static/css/main.cc19ce7b.css.map",
+    "main.58c2076c.js.map": "/sotatek_test/static/js/main.58c2076c.js.map",
+    "787.97a945da.chunk.js.map": "/sotatek_test/static/js/787.97a945da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc19ce7b.css",
+    "static/js/main.58c2076c.js"
+  ]
+}
