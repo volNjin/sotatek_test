@@ -30,7 +30,7 @@ export default function NewTask({ data }) {
             }
 
             // If 'dueDate' values are the same, compare 'piority' values
-            const piorityComparison = a.piority.localeCompare(b.piority);
+            const piorityComparison = b.piority.localeCompare(a.piority);
             return piorityComparison;
         });
         localStorage.setItem('myData', JSON.stringify(sortedData));
