@@ -4,7 +4,7 @@ import TaskBox from '../TaskBox';
 
 export default function TaskList({ data, setData, handleCheck }) {
     const [searchKey, setSearchKey] = useState('');
-    console.log(data)
+
     const handleSearch = (event) => {
         setSearchKey(event.target.value);
     }

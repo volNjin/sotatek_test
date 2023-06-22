@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sotatek_test/static/css/main.b4febc9a.css",
-    "main.js": "/sotatek_test/static/js/main.c5691a54.js",
+    "main.js": "/sotatek_test/static/js/main.89000e67.js",
     "static/js/787.97a945da.chunk.js": "/sotatek_test/static/js/787.97a945da.chunk.js",
     "index.html": "/sotatek_test/index.html",
     "main.b4febc9a.css.map": "/sotatek_test/static/css/main.b4febc9a.css.map",
-    "main.c5691a54.js.map": "/sotatek_test/static/js/main.c5691a54.js.map",
+    "main.89000e67.js.map": "/sotatek_test/static/js/main.89000e67.js.map",
     "787.97a945da.chunk.js.map": "/sotatek_test/static/js/787.97a945da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4febc9a.css",
-    "static/js/main.c5691a54.js"
+    "static/js/main.89000e67.js"
   ]
 }
