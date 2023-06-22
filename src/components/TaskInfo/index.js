@@ -50,11 +50,11 @@ export default function TaskInfo({
                     <select
                         name='piority'
                         className='input-field'
-                        value={data?.piority || 'normal'}
+                        value={data?.piority || '1'}
                         onChange={(e) => { index !== -1 ? handleChange(index, e.target.name, e.target.value) : handleChange(e) }}
                     >
                         <option value='0'>Low</option>
-                        <option value="1">Normal</option>
+                        <option value='1'>Normal</option>
                         <option value='2'>High</option>
                     </select>
                 </div>
